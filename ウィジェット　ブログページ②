@@ -1,4 +1,4 @@
-<div class="sidebar-section"> 
+<div class="irune-checklist-sticky-wrapper">
   <div class="irune-banner-wrapper">
     <a href="https://irune.co.jp/amazon-checklist-download/" target="_blank" class="irune-download-banner-link">
       <img src="http://irune.co.jp/wp-content/uploads/2026/03/amazon_checksheet.png" alt="元Amazonの売上拡大するための50のチェックリスト" class="irune-banner-image">
@@ -7,6 +7,12 @@
 </div>
 
 <style>
+  .irune-checklist-sticky-wrapper {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 20px;
+    z-index: 100;
+  }
   .irune-banner-wrapper {
     margin-top: 20px;
     border-radius: 8px;
@@ -14,20 +20,10 @@
     transition: transform 0.3s ease;
     background: #fff;
   }
-  
-  .irune-banner-wrapper:hover {
-    transform: translateY(-5px);
-  }
-  
-  .irune-download-banner-link {
-    display: block;
-    text-decoration: none;
-  }
-  
+  .irune-banner-wrapper:hover { transform: translateY(-5px ); }
+  .irune-download-banner-link { display: block; text-decoration: none; }
   .irune-banner-image {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 100%; height: auto; display: block;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
 </style>
